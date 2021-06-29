@@ -17,7 +17,7 @@ const devConfig = {
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                marketing: 'marketing@http://localhost:8081/remoteEntry.js',
+                marketing: 'marketing@https://mfe-marketing.herokuapp.com/dist/remoteEntry.js',
             },
             shared : packageJson.dependencies,
         }),
@@ -25,3 +25,7 @@ const devConfig = {
 };
 
 module.exports= merge(commonConfig, devConfig);
+
+// marketing: 'marketing@http://localhost:8081/remoteEntry.js',
+// marketing: 'marketing@http://localhost:5000/dist/remoteEntry.js',
+// marketing: 'marketing@https://mfe-marketing.herokuapp.com/dist/remoteEntry.js',
