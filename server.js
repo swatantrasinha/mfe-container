@@ -22,7 +22,7 @@ app.listen(port);
 
 
 /*
- package.json earlier scripts :
+ package.json earlier scripts is below :
 
   "start": "webpack serve --config config/webpack.dev.js",
   "build": "webpack --config config/webpack.prod.js"
