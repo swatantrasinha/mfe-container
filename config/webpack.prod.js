@@ -11,6 +11,7 @@ const prodConfig = {
         filename: '[name].[contenthash].js',
         publicPath: ' /dist/'
     },
+    /*
     plugins: [
         new ModuleFederationPlugin({
             name: 'container',
@@ -19,14 +20,7 @@ const prodConfig = {
             },
             shared: packageJson.dependencies
         })
-    ]
+    ] */
 };
 
 module.exports= merge(commonConfig, prodConfig);
-
-/*
-
- remotes: {
-    marketing: `marketing@${domain}/marketing/remoteEntry.js`
-    },
-*/

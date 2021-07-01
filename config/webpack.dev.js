@@ -13,19 +13,16 @@ const devConfig = {
             index: 'index.html',
         },
     },
+    /*
     plugins: [
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                marketing: 'marketing@https://mfe-marketing.herokuapp.com/dist/remoteEntry.js',
+                marketing: 'marketing@http://localhost:8081/dist/remoteEntry.js',
             },
             shared : packageJson.dependencies,
         }),
-    ]
+    ] */
 };
 
 module.exports= merge(commonConfig, devConfig);
-
-// marketing: 'marketing@http://localhost:8081/remoteEntry.js',
-// marketing: 'marketing@http://localhost:5000/dist/remoteEntry.js',
-// marketing: 'marketing@https://mfe-marketing.herokuapp.com/dist/remoteEntry.js',
